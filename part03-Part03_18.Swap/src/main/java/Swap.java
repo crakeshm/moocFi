@@ -22,7 +22,15 @@ public class Swap {
         // Implement here
         // asking for the two indices
         // and then swapping them
-
+        
+        System.out.println("Give two indices to swap: ");
+        int idx1 = scanner.nextInt();
+        int idx2 = scanner.nextInt();
+        
+        int helper = array[idx1];
+        array[idx1] = array[idx2];
+        array[idx2] = helper;
+        
         System.out.println("");
         index = 0;
         while (index < array.length) {

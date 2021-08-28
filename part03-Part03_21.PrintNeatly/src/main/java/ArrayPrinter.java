@@ -9,5 +9,10 @@ public class ArrayPrinter {
 
     public static void printNeatly(int[] array) {
         // Write some code in here
+        System.out.print(array[0]);
+        for(int i=1; i<=array.length-1;i++){
+            System.out.print(", " + array[i]);
+            
+        }
     }
 }

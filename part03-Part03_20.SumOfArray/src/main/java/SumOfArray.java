@@ -9,6 +9,10 @@ public class SumOfArray {
 
     public static int sumOfNumbersInArray(int[] array) {
         // Write some code here
-        return 0;
+        int sum =0;
+        for(int i =0; i<=array.length-1; i++){
+            sum += array[i];
+        }
+        return sum;
     }
 }
