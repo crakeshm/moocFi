@@ -119,4 +119,4 @@ public class AgentTest {
     private String fieldName(String toString) {
         return toString.replace(klassName + ".", "");
     }
-}
+    }
