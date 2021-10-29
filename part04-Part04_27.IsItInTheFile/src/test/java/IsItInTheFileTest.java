@@ -49,10 +49,10 @@ public class IsItInTheFileTest {
         }
 
         if (shouldBeFound) {
-            assertTrue("When searching for the string \"" + searchedFor + "\" in the file \"" + file + "\" it should be found.\nExpected the output to contain the string \"Found\".\nThe output was:\n" + io.getSysOut(), io.getSysOut().contains("Found"));
+            assertTrue("When searching for the string \"" + searchedFor + "\" in the file \"" + file + "\" it should be found.\nExpected the output to contain the string \"Found\".\nThe output was:\n" + io.getSysOut(), io.getSysOut().contains("Found!"));
             assertFalse("When searching for the string \"" + searchedFor + "\" in the file \"" + file + "\" it should be found.\nExpected the output not to contain the string \"Not found\".\nThe output was:\n" + io.getSysOut(), io.getSysOut().contains("Not found"));
         } else {
-            assertFalse("When searching for the string \"" + searchedFor + "\" in the file \"" + file + "\" it should not be found.\nExpected the output not to contain the string \"Found\".\nThe output was:\n" + io.getSysOut(), io.getSysOut().contains("Found"));
+            assertFalse("When searching for the string \"" + searchedFor + "\" in the file \"" + file + "\" it should not be found.\nExpected the output not to contain the string \"Found\".\nThe output was:\n" + io.getSysOut(), io.getSysOut().contains("Found!"));
             assertTrue("When searching for the string \"" + searchedFor + "\" in the file \"" + file + "\" it should not be found.\nExpected the output not to contain the string \"Not found\".\nThe output was:\n" + io.getSysOut(), io.getSysOut().contains("Not found"));
 
         }
